@@ -11,19 +11,19 @@ I'm not really a fan of Python any more, but I don't feel like redoing the entir
 Here's a simple list of every command in UWUnicode.
 
 ### counter & register
-`uwu` - add 1 to counter<br>
-`UWU` - add 10 to counter<br>
-`owo` - add 5 to counter<br>
-`OWO` - add 50 to counter<br>
+`uwu` - add 1 to counter
+
+`UWU` - add 10 to counter
+
+`owo` - add 5 to counter
+
+`OWO` - add 50 to counter
+
 `nya` - add code to register
 
-> take the value of the counter<br>
-> add it's unicode equivalent <br>
-> to the register & clear counter <br>
-> (e.g. 101 -> lowercase "e")
->
-> note: not the U+XXXX code. <br>
-> the base 10 number, like in the HTML entity (&#101 for example)
+takes the value of the counter, adds its unicode equivalent to the register, and clears the counter (e.g. 101 -> lowercase "e")
+
+note: not the U+XXXX code. it's the base 10 number, like in the HTML entity (&#101 for example)
 
 `>:3` - print register content and clear it
 
@@ -31,8 +31,10 @@ Here's a simple list of every command in UWUnicode.
 `:3c [variable]` - get user input and store it in a variable
 
 `>//<` - variable, using it alone adds the variable value to register
-> the amount of slashes in the variable determines which variable it is (minimum 2)<br>
-> (e.g. > \>//< is variable 1, >////< is variable 3, etc)
+
+the amount of slashes in the variable determines which variable it is (minimum 2)<br>
+
+(e.g. > \>//< is variable 1, >////< is variable 3, etc)
 
 ### misc
 `o3o comment! o3o` - comment (surround text in `o3o` (have spacing!))
