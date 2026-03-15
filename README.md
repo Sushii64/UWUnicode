@@ -30,6 +30,8 @@ note: not the U+XXXX code. it's the base 10 number, like in the HTML entity (&#1
 
 `>:3` - print register content and clear it
 
+`@w@` - pop end of register, idk, could be useful
+
 ### input & variables
 `:3c [variable]` - get user input and store it in a variable
 
@@ -38,6 +40,24 @@ note: not the U+XXXX code. it's the base 10 number, like in the HTML entity (&#1
 the amount of slashes in the variable determines which variable it is (minimum 2)<br>
 
 (e.g. > \>//< is variable 1, >////< is variable 3, etc)
+
+`prr [variable]` - set variable to register, and clear register
+
+`mrr [variable]` - set variable to counter, and clear counter
+
+`^w^ [variable]` - inc variable
+
+`umu [variable]` - dec variable
+
+`+w+ [variable] [variable 2]` - add the sum of variable and variable 2 to the counter (x + y)
+
+`-w- [variable] [variable 2]` - add the difference of variable and variable 2 to the counter (x - y)
+
+`*w* [variable] [variable 2]` - add the product of variable and variable 2 to the counter (x * y)
+
+`/w\ [variable] [variable 2]` - add the quotient of variable and variable 2 to the counter (x / y)
+
+see the examples
 
 ### misc
 `o3o comment! o3o` - comment (surround text in `o3o` (have spacing!))

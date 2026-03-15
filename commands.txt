@@ -7,16 +7,12 @@ nya - add code to register
 :3c [variable] - get user input and store it in a variable
 >//< - variable, using it alone adds the variable value to register
 o3o comment! o3o - comment (surround text in `o3o` (have spacing!))
-
-to be added
-
-prr [variable] - set variable to counter and clear counter
+prr [variable] - set variable to register, and clear register
+mrr [variable] - set variable to counter, and clear counter
 ^w^ [variable] - inc variable
 umu [variable] - dec variable
-
 +w+ [variable] [variable 2] - add the sum of variable and variable 2 to the counter (x + y)
 -w- [variable] [variable 2] - add the difference of variable and variable 2 to the counter (x - y)
 *w* [variable] [variable 2] - add the product of variable and variable 2 to the counter (x * y)
 /w\ [variable] [variable 2] - add the quotient of variable and variable 2 to the counter (x / y)
-
 @w@ - pop end of register

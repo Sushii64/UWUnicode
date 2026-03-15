@@ -25,6 +25,7 @@ def convert(text):
     newtext += "UWU nya\n>:3"
     return newtext
 
-with open(os.path.join(root_dir, "converter/in.txt"), "rw") as inp:
+with open(os.path.join(root_dir, "converter/in.txt"), "r") as inp:
     program = convert(inp.read())
-    inp.write(program)
+    with open(os.path.join(root_dir, "converter/in.txt"), "w") as out:
+        out.write(program)
