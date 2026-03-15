@@ -1,7 +1,7 @@
 # UWUnicode
 Goofy catlike uwukind esoteric programming language.
 
-Currently not much of a programming language as it is a method of encoding text, but UWUnicode v2.0 should make that problem a little better.
+Currently not much of a programming language as it is a method of encoding text, but later updates should make that problem a little better.
 
 I made this a while ago, and only now decided to give it a breath of new life by cleaning up the code and putting it on GitHub.
 

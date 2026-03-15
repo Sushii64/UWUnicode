@@ -1,0 +1,9 @@
+uwu - add 1 to counter
+UWU - add 10 to counter
+owo - add 5 to counter
+OWO - add 50 to counter
+nya - add code to register
+>:3 - print register content and clear it
+:3c [variable] - get user input and store it in a variable
+>//< - variable, using it alone adds the variable value to register
+o3o comment! o3o - comment (surround text in `o3o` (have spacing!))

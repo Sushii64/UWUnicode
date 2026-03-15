@@ -2,8 +2,6 @@ import os
 from pathlib import Path
 
 root_dir = Path(os.path.dirname(os.path.abspath(__file__))).parent.absolute().__str__()
-if root_dir.startswith("/tmp"): 
-    root_dir = "."
 
 def convert(text):
     newtext = ""
@@ -27,7 +25,6 @@ def convert(text):
     newtext += "UWU nya\n>:3"
     return newtext
 
-with open(os.path.join(root_dir, "converter/in.txt"), "r") as inp:
-    with open(os.path.join(root_dir, "program.uwu"), "w") as file:
-        program = convert(inp.read()) 
-        file.write(program)
+with open(os.path.join(root_dir, "converter/in.txt"), "rw") as inp:
+    program = convert(inp.read())
+    inp.write(program)

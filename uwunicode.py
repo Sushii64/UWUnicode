@@ -29,7 +29,7 @@ def interpret(code):
                         char = 0
                     elif command == ">:3":
                         print(message, end="")
-                        message = "" 
+                        message = ""
                     elif command == ":3c":
                         inputmode = True
                     # Code for variables
@@ -40,19 +40,28 @@ def interpret(code):
                             vars[varname] = input()
                             try:
                                 vars[varname] = int(vars[varname])
-                            except Exception:
+                            except ValueError:
                                 pass
                             inputmode = False
                         else:
                             message += str(vars[varname])
                         varname = "NIL"
-                    elif command == "" or command == None or command == " ":
+                    elif command == "" or command is None or command == " ":
                         pass
                     else:
-                        print("ERROR! Unknown command: ", command)
+                        print("error! unknown command: ", command)
                         sys.exit()
                 else:
                     pass
 
-with open(os.path.join(root_dir, "program.uwu"), "r") as file: # TODO: Add the ability to provide a file path (or make it required)
-    interpret(file.read())
+
+program = os.path.join(root_dir, "program.uwu")
+if len(sys.argv) >= 2:
+    program = sys.argv[1]
+
+try:
+    with open(program, "r") as file:
+        print("running " + program)
+        interpret(file.read())
+except FileNotFoundError as e:
+    print("error! file not found: " + program)
