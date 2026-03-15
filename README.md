@@ -7,6 +7,9 @@ I made this a while ago, and only now decided to give it a breath of new life by
 
 I'm not really a fan of Python any more, but I don't feel like redoing the entire program.
 
+## Running
+Just run `uwunicode.py`!
+
 ## simple docs
 Here's a simple list of every command in UWUnicode.
 

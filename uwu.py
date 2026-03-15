@@ -1,9 +1,7 @@
 import sys
 import os
 
-root_dir = os.path.dirname(os.path.abspath(__file__))
-if root_dir.startswith("/tmp"): 
-    root_dir = "."
+root_dir = os.path.dirname(os.path.abspath(__file__)) # I really hate that I have to do this lmfao
 
 def interpret(code):
     char = 0
@@ -34,7 +32,9 @@ def interpret(code):
                         message = "" 
                     elif command == ":3c":
                         inputmode = True
+                    # Code for variables
                     elif command.startswith(">") and command.endswith("<") and "//" in command:
+                        # Is this needlessly complicated? Probably. I'll change it some other time. Or YOU can! :3
                         varname = f"var{str(len(''.join(char for char in command if char == '/')) - 1)}"
                         if inputmode:
                             vars[varname] = input()
@@ -49,10 +49,10 @@ def interpret(code):
                     elif command == "" or command == None or command == " ":
                         pass
                     else:
-                        print("Unknown command:", command)
+                        print("ERROR! Unknown command: ", command)
                         sys.exit()
                 else:
                     pass
 
-with open(os.path.join(root_dir, "program.uwu"), "r") as file:
+with open(os.path.join(root_dir, "program.uwu"), "r") as file: # TODO: Add the ability to provide a file path (or make it required)
     interpret(file.read())
