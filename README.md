@@ -7,6 +7,11 @@ I made this a while ago, and only now decided to give it a breath of new life by
 
 I'm not really a fan of Python any more, but I don't feel like redoing the entire program.
 
+## Contribution
+It would be very nice if someone made a pull request and made my code a lot easier to work with. It would be very nice.
+
+Or, you can submit bug reports in Issues! :D
+
 ## Running
 Just run `uwunicode.py`!
 
